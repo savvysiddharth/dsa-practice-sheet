@@ -9,6 +9,7 @@ void printArray(int input[], int n) {
   cout << "]" << endl;
 }
 
+// Time complexity - O(n)
 void rotateArray(int input[], int length) {
   int lastElement = input[length-1];
   for(int i=length-2; i >= 0; i--) {
