@@ -14,7 +14,7 @@ void printVector(vector<int> input) {
 
 // Naive Algorithm / Bruteforce Method
 // Time Complexity - O(n^2)
-// Space Complexity - O(n)
+// Space Complexity - O(1)
 int maxSubarraySum(vector<int> input) {
   int len = input.size();
   if(len == 0) return 0;

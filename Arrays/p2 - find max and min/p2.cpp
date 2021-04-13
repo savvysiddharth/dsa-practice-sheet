@@ -36,12 +36,12 @@ struct Pair {
 struct Pair tournament_split(int input[], int first, int last) {
   int len = last - first + 1;
   struct Pair p;
-  if(len == 1) {
+  if(len == 1) { // base case #1 (assign this same number to max & min both)
     p.max = input[first];
     p.min = p.max;
     return p;
-  } else if(len == 2) {
-    if(input[first] >= input[last]) {
+  } else if(len == 2) { // base case #2
+    if(input[first] >= input[last]) { // find max & min among these 2 numbers
       p.max = input[first];
       p.min = input[last];
     } else {
@@ -49,7 +49,7 @@ struct Pair tournament_split(int input[], int first, int last) {
       p.min = input[first];
     }
     return p;
-  } else {
+  } else { // recursive case
     int mid = (first + last)/2;
     struct Pair left = tournament_split(input, first, mid-1);
     struct Pair right = tournament_split(input, mid, last);
@@ -70,8 +70,8 @@ void tournament_approach() { //ROOT
 }
 
 // Compare in Pairs Method:
-// if n is even: 1 + 3(n-2)/2
-// if n is odd: 3(n-1)/2
+// if n is even: 1 + (n-2)/2 + 2*[(n-2)/2] = 1 + 3(n-2)/2
+// if n is odd: (n-1)/2 + 2*[(n-1)/2] = 3(n-1)/2
 void compare_in_pairs_approach() { //ROOT
   int input[] = {23,64,12,887,9,23};
   int len = sizeof(input)/sizeof(int);

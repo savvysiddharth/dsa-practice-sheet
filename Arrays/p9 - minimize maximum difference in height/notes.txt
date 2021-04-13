@@ -1,0 +1,9 @@
+https://stackoverflow.com/questions/32233916/minimum-difference-between-heights-of-towers/63220955#63220955
+
+primary aim : minimize the difference between maximum and minimum element
+
+approach to solve the problem:
+somehow try to minimize the maximum element possible
+and maximize the minimum element possible, this way their difference will be least.
+
+refer that stackoverflow link for better clarity on solution
