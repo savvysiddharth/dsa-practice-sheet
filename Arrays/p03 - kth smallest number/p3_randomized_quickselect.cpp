@@ -13,7 +13,6 @@ void swap(int *x, int *y) {
 int partition_random_pivot(int input[], int start, int end) {
   int size = end - start + 1;
   int x = rand();
-  // cout << x%10;
   int random_index = (x%size) + start; // generated random index between start and end
   swap(&input[random_index], &input[end]); //put that randomly picked element to the right end of array
   int pivot = input[end];
@@ -23,6 +22,9 @@ int partition_random_pivot(int input[], int start, int end) {
     if(input[j] < pivot) {
       swap(&input[i+1], &input[j]);
       i++;
+      // note: we will increment j in this case too
+      // you might wonder, that new element which just came to j'th index must be rechecked
+      // but think about it once again, that j'th element which is about be replaced is already checked in earlier iterations!
     }
     j++;
   }

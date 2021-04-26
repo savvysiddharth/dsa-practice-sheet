@@ -102,9 +102,9 @@ void MinHeap::printHeap() {
 
 int main() {
   MinHeap myheap(100); // creating a heap with capacity of 100 elements
-  int input[] = {7,10,4,3,20,15};
+  int input[] = {7,10,4,3,20,15}; // n length
   int len = sizeof(input)/sizeof(int);
-  myheap.buildHeap(input, len);
+  myheap.buildHeap(input, len); // O(n)
   myheap.printHeap();
   
   cout << "kth Smallest Program:" << endl;
@@ -112,7 +112,7 @@ int main() {
   int k;
   cin >> k; 
   for(int i=1; i<k; i++) {
-    myheap.extractMin();
+    myheap.extractMin(); //O(logn)
   }
   cout << myheap.extractMin() << endl;
 }

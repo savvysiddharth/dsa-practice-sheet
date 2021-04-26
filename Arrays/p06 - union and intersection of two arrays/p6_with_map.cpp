@@ -11,7 +11,7 @@ void printVector(vector<int> input) {
   cout << "]" << endl;
 }
 
-// Hash Map Approach
+// Map Approach
 // Time Complexity - O(m + n)
 void my_union(vector<int> input1, vector<int> input2) {
   int l1 = input1.size();

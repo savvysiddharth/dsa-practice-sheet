@@ -14,7 +14,7 @@ void printArray(int input[], int length) {
 
 // Time Complexity : O(nLogn + n)
 // Case where elements can be any integer (positive or negative)
-int minimizeMaxDifference_0(int input[], int length, int k) {
+int minimizeMaxDifference_noConstraints(int input[], int length, int k) {
   sort(input, input+length); // sort the input array
   int max_item = input[length-1];
   int min_item = input[0];

@@ -23,7 +23,7 @@ void sort012(int input[], int len) {
   int i = -1; // maintains list of 0's (numbers on this index and before this index are 0s)
   int j = len; // maintains list of 2's (number on this index and after this index are 2s)
   int k = 0; // scans through all elements
-  while(k<j) {
+  while(k < j) {
     if(input[k] == 0) {
         swap(&input[i+1], &input[k]);
         i++; k++;
