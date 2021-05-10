@@ -13,6 +13,8 @@ int minJumpsRecursive(int input[], int length, int current, int jumps) {
   return *min_element(results.begin(), results.end());
 }
 
+// Optimal approach
+// Time Complexity : O(n)
 int myMinJumps(int input[], int length) {
   if(length <= 1) return 0; // obviously, we don't need any jumps at all if number of elements are less than 2
   if(length == 2 && input[0] == 0) return -1;  // not possible 
