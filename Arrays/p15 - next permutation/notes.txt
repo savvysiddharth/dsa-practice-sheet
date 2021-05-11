@@ -1,0 +1,4 @@
+tips:
+design and implement recursive algorithm to generate all permutations for a given string, and then analyze recursive tree. See, how u can observe pattern and design algorithm for "next permutation" problem.
+
+video explanation: https://www.youtube.com/watch?v=quAS1iydq7U
