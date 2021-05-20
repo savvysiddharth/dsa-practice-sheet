@@ -36,6 +36,8 @@ int merge_ci(int i1, int j1, int i2, int j2, int input[]) {
   return inverseCount;
 }
 
+// Time Complexity - O(nLogn)
+// Space Complexity - O(n)
 int ci(int i, int j, int input[]) {
   if(i>=j) return 0; // base case
   int mid = (i+j)/2;
