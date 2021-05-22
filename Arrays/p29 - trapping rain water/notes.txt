@@ -1,0 +1,4 @@
+array preprocessing is used.
+core : "at an index water will be filled only if there exists a longer pipe to it's left and right both"
+
+video explanation : https://www.youtube.com/watch?v=UZG3-vZlFM4&ab_channel=AnujBhaiya
