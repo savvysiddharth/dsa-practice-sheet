@@ -1,0 +1,4 @@
+Here we might even calculate factorial of 100, which might not even be stored in long long int
+so we implement our own oldschool multiplication, where numbers are represented in arrays (digit by digit)
+
+Reference: https://www.geeksforgeeks.org/factorial-large-number/
