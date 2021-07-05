@@ -10,6 +10,7 @@ int sb(int input[], int length, int target) {
   while(end < length) {
     if(expand) currentSum += input[end];
     else currentSum -= input[start-1];
+    
     if(currentSum > target) {
       minLength = min(minLength, end-start+1);
       expand = false; // shrink
